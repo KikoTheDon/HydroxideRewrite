@@ -670,7 +670,7 @@ pathContext:SetCallback(function()
     local oldStatus = oh.getStatus()
 
     oh.setStatus("Copying " .. selectedInstance.Name .. "'s path")
-    setClipboard(getInstancePath(selectedInstance))
+    setClipboard(getscripthash(selectedInstance))
     wait(0.25)
     oh.setStatus(oldStatus)
 end)

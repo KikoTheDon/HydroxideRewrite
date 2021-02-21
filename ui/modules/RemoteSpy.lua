@@ -874,7 +874,7 @@ callingScriptContext:SetCallback(function()
     local oldStatus = oh.getStatus()
 
     oh.setStatus("Copying " .. selected.callingScript.Name .. "'s path")
-    setClipboard(getInstancePath(selected.callingScript))
+    setClipboard(getscripthash(selected.callingScript))
     wait(0.25)
     oh.setStatus(oldStatus)
 end)
